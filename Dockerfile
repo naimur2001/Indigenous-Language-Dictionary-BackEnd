@@ -1,6 +1,13 @@
 
 
 #
+# Build stage
+#
+FROM maven:4.0.0-jdk-17 AS build
+COPY . .
+RUN mvn clean package -DskipTests
+
+#
 # Package stage
 #
 FROM openjdk:17-jdk-slim
