@@ -5,4 +5,3 @@ COPY target/Indigenous-Language-Dictionary-0.0.1-SNAPSHOT.jar /app/Indigenous-La
 
 ENTRYPOINT ["java", "-jar", "/app/Indigenous-Language-Dictionary.jar"]
 
-EXPOSE 8080
